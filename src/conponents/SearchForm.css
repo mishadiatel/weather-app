@@ -1,0 +1,62 @@
+.form-wrapper {
+  padding: 15px 0;
+}
+.search-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  gap: 7px;
+  align-items: center;
+  position: relative;
+}
+.weather-logo {
+  font-size: 5rem;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.input-wrapper input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+.input-wrapper input:focus {
+  outline: none;
+}
+.search-icon {
+  font-size: 1.5rem;
+}
+.search-form button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border: none;
+  font-size: 1.2rem;
+  align-items: center;
+  border-radius: 10px;
+}
+.search-result-container {
+  background-color: #5a5c5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 815px) {
+  .weather-logo {
+    font-size: 3rem;
+  }
+  .input-wrapper input {
+    font-size: 1rem;
+  }
+  .input-wrapper {
+    gap: 8px;
+  }
+  .search-form button {
+    padding: 7px 10px;
+    font-size: 1rem;
+  }
+}
